@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Quicksand", "Noto Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-primary: #FF6B6B;
+  --color-brand-secondary: #4ECDC4;
+  --color-brand-accent: #FFE66D;
+  --color-brand-bg: #F7FFF7;
+}
+
+body {
+  background-color: var(--color-brand-bg);
+  font-family: var(--font-sans);
+}
+
+.book-card-shadow {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #4ECDC4;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #45b7af;
+}

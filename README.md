@@ -1,20 +1,27 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Movie & Story App
 
-# Run and deploy your AI Studio app
+Ứng dụng đọc truyện cổ tích cho bé.
 
-This contains everything you need to run your app locally.
+## Hướng dẫn chạy trên GitHub
 
-View your app in AI Studio: https://ai.studio/apps/29e21fc9-3383-4beb-bc88-403c35a1a49f
+Ứng dụng này đã được cấu hình để có thể chạy trên GitHub Pages.
 
-## Run Locally
+### Cách triển khai (Deploy to GitHub Pages)
 
-**Prerequisites:**  Node.js
+1. Đẩy mã nguồn lên một repository mới trên GitHub.
+2. Đi tới **Settings** > **Pages** của repository đó.
+3. Trong phần **Build and deployment** > **Source**, chọn **GitHub Actions**.
+4. Ứng dụng sẽ tự động được build và triển khai thông qua file workflow `.github/workflows/deploy.yml` đã được tạo sẵn.
 
+### Lưu ý về Hình ảnh
+Các hình ảnh hiện đang sử dụng liên kết từ Google AI Studio Artifacts. Nếu bạn muốn ứng dụng hoạt động vĩnh viễn và độc lập trên GitHub, bạn nên:
+1. Tải các ảnh bìa về máy.
+2. Lưu vào thư mục `public/assets/` hoặc `src/assets/`.
+3. Cập nhật đường dẫn trong `src/data/books.ts`.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Phát triển cục bộ
+
+```bash
+npm install
+npm run dev
+```
